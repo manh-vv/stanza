@@ -18,7 +18,7 @@ test('Connect using WebSocket', done => {
     });
 
     client.connect();
-});
+}, 50000);
 
 test('Connect using BOSH', done => {
     expect.assertions(1);
@@ -37,7 +37,7 @@ test('Connect using BOSH', done => {
     });
 
     client.connect();
-});
+}, 50000);
 
 test('End to end', done => {
     expect.assertions(2);
@@ -93,4 +93,4 @@ test('End to end', done => {
     });
 
     client1.connect();
-});
+}, 50000);
